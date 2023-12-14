@@ -1,0 +1,15 @@
+def pyramid(rows):
+    for i in range(rows):
+       print(''*(rows-i-1)+'*'(i+1))
+   for j in range(rows-1,0,-1):
+       print(''*(rows-j)+'*'*(j))
+    
+ pyramid(10)
+def find(n):
+    a = bin(n)[2:]
+    b = oct(n)[2:]
+    return a, b
+n = int(input())
+c,d = find(n)
+print(c)
+print(d)
